@@ -1,0 +1,61 @@
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class Main {
+    public static void main(String[] args) {
+        // Press Alt+Enter with your caret at the highlighted text to see how
+        // IntelliJ IDEA suggests fixing it.
+
+       // in1020(21, 12) → true
+       //  in1020(8, 99) → false
+
+         // 11:47
+      //  Given 2 int values, return true if they are both in the range 30..40 inclusive, or they are both in the range 40..50 inclusive.
+            //    in3050(30, 31) → true
+       // in3050(30, 41) → false
+       // in3050(40, 50) → true
+
+
+        //Given two non-negative int values, return true if they have the same last digit, such as with 27 and 57. Note that the % "mod" operator computes remainders, so 17 % 10 is 7.
+        //lastDigit(7, 17) → true
+       // lastDigit(6, 17) → false
+        //lastDigit(3, 113) → true
+
+  // 11:59
+      //  We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling. We are in trouble if they are both smiling or if neither of them is smiling. Return true if we are in trouble.
+       // monkeyTrouble(true, true) → true
+       // monkeyTrouble(false, false) → true
+       // monkeyTrouble(true, false) → false
+
+        System.out.println(monkeyTrouble("true", "true") );
+
+       System.out.println(monkeyTrouble("false", "false") );
+
+        System.out.println(monkeyTrouble("true", "false") );
+
+        System.out.printf("Hello and welcome!");
+
+        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
+
+
+
+    }
+
+
+   // 11:53
+
+    //We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling. We are in trouble if they are both smiling or if neither of them is smiling. Return true if we are in trouble.
+    public static boolean monkeyTrouble(String a, String b)
+    {
+        boolean bo=false;
+
+        if( ((a=="true") && (b=="true")) || ((a!="true") && (b!="true")) )
+
+        {
+
+            bo= true;
+
+        }
+
+       return bo;
+    }
+}
