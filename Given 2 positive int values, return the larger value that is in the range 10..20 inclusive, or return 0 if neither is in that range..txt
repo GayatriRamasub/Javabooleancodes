@@ -1,0 +1,50 @@
+
+public class Main {
+    public static void main(String[] args) {
+
+
+
+
+
+     System.out.println(max1020(11, 19));
+
+      System.out.println( max1020(19, 11));
+
+
+
+        System.out.println(max1020(11, 9));
+
+   
+
+
+    }
+
+
+  
+
+    public static int max1020(int a, int b) {
+        boolean bo = false;
+
+        int returnvalue=0;
+
+        if (((a >= 10) && (a <= 20)) || ((b >= 10) && (b <= 20))) {
+
+            if (a > b) {
+
+                returnvalue=a;
+
+
+            }
+            if (b > a) {
+
+                returnvalue=b;
+
+            }
+
+
+        }
+
+        return   returnvalue;
+    }
+
+}
